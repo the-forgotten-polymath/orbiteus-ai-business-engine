@@ -1,0 +1,1676 @@
+[
+  {
+    "License": "Apache-2.0",
+    "Name": "CacheControl",
+    "URL": "https://pypi.org/project/CacheControl/",
+    "Version": "0.14.4"
+  },
+  {
+    "License": "MIT License",
+    "Name": "Deprecated",
+    "URL": "https://github.com/laurent-laporte-pro/deprecated",
+    "Version": "1.3.1"
+  },
+  {
+    "License": "BSD License",
+    "Name": "Django",
+    "URL": "https://www.djangoproject.com/",
+    "Version": "5.2.6"
+  },
+  {
+    "License": "MIT License",
+    "Name": "Faker",
+    "URL": "https://github.com/joke2k/faker",
+    "Version": "40.12.0"
+  },
+  {
+    "License": "BSD-3-Clause",
+    "Name": "Flask",
+    "URL": "https://github.com/pallets/flask/",
+    "Version": "3.1.3"
+  },
+  {
+    "License": "BSD License",
+    "Name": "Jinja2",
+    "URL": "https://palletsprojects.com/p/jinja/",
+    "Version": "3.1.2"
+  },
+  {
+    "License": "MIT License",
+    "Name": "Mako",
+    "URL": "https://www.makotemplates.org/",
+    "Version": "1.3.10"
+  },
+  {
+    "License": "BSD License",
+    "Name": "MarkupSafe",
+    "URL": "https://palletsprojects.com/p/markupsafe/",
+    "Version": "2.1.5"
+  },
+  {
+    "License": "MIT",
+    "Name": "PyJWT",
+    "URL": "https://github.com/jpadilla/pyjwt",
+    "Version": "2.12.1"
+  },
+  {
+    "License": "BSD License",
+    "Name": "PyPDF2",
+    "URL": "https://github.com/py-pdf/PyPDF2",
+    "Version": "2.12.1"
+  },
+  {
+    "License": "MIT License",
+    "Name": "PyYAML",
+    "URL": "https://pyyaml.org/",
+    "Version": "6.0.3"
+  },
+  {
+    "License": "BSD-2-Clause",
+    "Name": "Pygments",
+    "URL": "https://pygments.org",
+    "Version": "2.20.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "RapidFuzz",
+    "URL": "https://github.com/rapidfuzz/RapidFuzz",
+    "Version": "3.14.5"
+  },
+  {
+    "License": "MIT",
+    "Name": "SQLAlchemy",
+    "URL": "https://www.sqlalchemy.org",
+    "Version": "2.0.48"
+  },
+  {
+    "License": "BSD-3-Clause",
+    "Name": "Werkzeug",
+    "URL": "https://github.com/pallets/werkzeug/",
+    "Version": "3.1.6"
+  },
+  {
+    "License": "BSD License",
+    "Name": "Willow",
+    "URL": "https://github.com/wagtail/Willow",
+    "Version": "1.11.0"
+  },
+  {
+    "License": "BSD License",
+    "Name": "XlsxWriter",
+    "URL": "https://github.com/jmcnamara/XlsxWriter",
+    "Version": "3.1.9"
+  },
+  {
+    "License": "MIT",
+    "Name": "aiosmtplib",
+    "URL": "https://github.com/cole/aiosmtplib/blob/main/CHANGELOG.rst",
+    "Version": "5.1.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "alembic",
+    "URL": "https://alembic.sqlalchemy.org",
+    "Version": "1.18.4"
+  },
+  {
+    "License": "BSD License",
+    "Name": "amqp",
+    "URL": "http://github.com/celery/py-amqp",
+    "Version": "5.3.1"
+  },
+  {
+    "License": "MIT",
+    "Name": "annotated-doc",
+    "URL": "https://github.com/fastapi/annotated-doc",
+    "Version": "0.0.4"
+  },
+  {
+    "License": "MIT License",
+    "Name": "annotated-types",
+    "URL": "https://github.com/annotated-types/annotated-types",
+    "Version": "0.7.0"
+  },
+  {
+    "License": "MIT License",
+    "Name": "anthropic",
+    "URL": "https://github.com/anthropics/anthropic-sdk-python",
+    "Version": "0.97.0"
+  },
+  {
+    "License": "ISC License (ISCL)",
+    "Name": "anyascii",
+    "URL": "https://github.com/anyascii/anyascii",
+    "Version": "0.3.3"
+  },
+  {
+    "License": "MIT",
+    "Name": "anyio",
+    "URL": "https://anyio.readthedocs.io/en/stable/versionhistory.html",
+    "Version": "4.13.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "argon2-cffi",
+    "URL": "https://github.com/hynek/argon2-cffi/blob/main/CHANGELOG.md",
+    "Version": "25.1.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "argon2-cffi-bindings",
+    "URL": "https://github.com/hynek/argon2-cffi-bindings/blob/main/CHANGELOG.md",
+    "Version": "25.1.0"
+  },
+  {
+    "License": "BSD License",
+    "Name": "asgiref",
+    "URL": "https://github.com/django/asgiref/",
+    "Version": "3.9.1"
+  },
+  {
+    "License": "Apache-2.0",
+    "Name": "asyncpg",
+    "URL": "UNKNOWN",
+    "Version": "0.31.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "attrs",
+    "URL": "https://www.attrs.org/en/stable/changelog.html",
+    "Version": "25.4.0"
+  },
+  {
+    "License": "BSD License",
+    "Name": "babel",
+    "URL": "https://babel.pocoo.org/",
+    "Version": "2.17.0"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "bcrypt",
+    "URL": "https://github.com/pyca/bcrypt/",
+    "Version": "5.0.0"
+  },
+  {
+    "License": "MIT License",
+    "Name": "beautifulsoup4",
+    "URL": "https://www.crummy.com/software/BeautifulSoup/bs4/",
+    "Version": "4.13.5"
+  },
+  {
+    "License": "BSD License",
+    "Name": "billiard",
+    "URL": "https://github.com/celery/billiard",
+    "Version": "4.2.4"
+  },
+  {
+    "License": "MIT License",
+    "Name": "blinker",
+    "URL": "https://github.com/pallets-eco/blinker/",
+    "Version": "1.9.0"
+  },
+  {
+    "License": "BSD-2-Clause",
+    "Name": "boolean.py",
+    "URL": "https://github.com/bastikr/boolean.py",
+    "Version": "5.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "brotli",
+    "URL": "https://github.com/google/brotli",
+    "Version": "1.2.0"
+  },
+  {
+    "License": "UNKNOWN",
+    "Name": "caltraining-backend",
+    "URL": "UNKNOWN",
+    "Version": "0.1.0"
+  },
+  {
+    "License": "BSD-3-Clause",
+    "Name": "celery",
+    "URL": "https://docs.celeryq.dev/",
+    "Version": "5.6.3"
+  },
+  {
+    "License": "Mozilla Public License 2.0 (MPL 2.0)",
+    "Name": "certifi",
+    "URL": "https://github.com/certifi/python-certifi",
+    "Version": "2026.2.25"
+  },
+  {
+    "License": "MIT",
+    "Name": "cffi",
+    "URL": "https://cffi.readthedocs.io/en/latest/whatsnew.html",
+    "Version": "2.0.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "cfgv",
+    "URL": "https://github.com/asottile/cfgv",
+    "Version": "3.5.0"
+  },
+  {
+    "License": "GNU Lesser General Public License v2 or later (LGPLv2+)",
+    "Name": "chardet",
+    "URL": "https://github.com/chardet/chardet",
+    "Version": "5.2.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "charset-normalizer",
+    "URL": "https://github.com/jawah/charset_normalizer/blob/master/CHANGELOG.md",
+    "Version": "3.4.3"
+  },
+  {
+    "License": "BSD-3-Clause",
+    "Name": "click",
+    "URL": "https://github.com/pallets/click/",
+    "Version": "8.3.1"
+  },
+  {
+    "License": "MIT License",
+    "Name": "click-didyoumean",
+    "URL": "https://github.com/click-contrib/click-didyoumean",
+    "Version": "0.3.1"
+  },
+  {
+    "License": "BSD License",
+    "Name": "click-plugins",
+    "URL": "https://github.com/click-contrib/click-plugins",
+    "Version": "1.1.1.2"
+  },
+  {
+    "License": "MIT",
+    "Name": "click-repl",
+    "URL": "https://github.com/untitaker/click-repl",
+    "Version": "0.3.0"
+  },
+  {
+    "License": "BSD License",
+    "Name": "contourpy",
+    "URL": "https://github.com/contourpy/contourpy",
+    "Version": "1.3.3"
+  },
+  {
+    "License": "Apache-2.0",
+    "Name": "coverage",
+    "URL": "https://github.com/coveragepy/coveragepy",
+    "Version": "7.13.5"
+  },
+  {
+    "License": "Apache Software License; BSD License",
+    "Name": "cryptography",
+    "URL": "https://github.com/pyca/cryptography",
+    "Version": "42.0.8"
+  },
+  {
+    "License": "BSD License",
+    "Name": "cssselect",
+    "URL": "https://github.com/scrapy/cssselect",
+    "Version": "1.3.0"
+  },
+  {
+    "License": "BSD License",
+    "Name": "cssselect2",
+    "URL": "https://doc.courtbouillon.org/cssselect2/",
+    "Version": "0.9.0"
+  },
+  {
+    "License": "BSD License",
+    "Name": "cycler",
+    "URL": "https://matplotlib.org/cycler/",
+    "Version": "0.12.1"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "cyclonedx-python-lib",
+    "URL": "https://github.com/CycloneDX/cyclonedx-python-lib/#readme",
+    "Version": "11.7.0"
+  },
+  {
+    "License": "BSD License",
+    "Name": "decorator",
+    "URL": "https://github.com/micheles/decorator",
+    "Version": "5.1.1"
+  },
+  {
+    "License": "Python Software Foundation License",
+    "Name": "defusedxml",
+    "URL": "https://github.com/tiran/defusedxml",
+    "Version": "0.7.1"
+  },
+  {
+    "License": "Python Software Foundation License",
+    "Name": "distlib",
+    "URL": "https://github.com/pypa/distlib",
+    "Version": "0.4.0"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "distro",
+    "URL": "https://github.com/python-distro/distro",
+    "Version": "1.9.0"
+  },
+  {
+    "License": "BSD License",
+    "Name": "django-filter",
+    "URL": "https://github.com/carltongibson/django-filter/tree/main",
+    "Version": "25.1"
+  },
+  {
+    "License": "BSD License",
+    "Name": "django-modelcluster",
+    "URL": "https://github.com/wagtail/django-modelcluster",
+    "Version": "6.4"
+  },
+  {
+    "License": "BSD License",
+    "Name": "django-permissionedforms",
+    "URL": "https://github.com/wagtail/django-permissionedforms",
+    "Version": "0.1"
+  },
+  {
+    "License": "MIT",
+    "Name": "django-stubs-ext",
+    "URL": "https://github.com/typeddjango/django-stubs",
+    "Version": "5.2.2"
+  },
+  {
+    "License": "BSD License",
+    "Name": "django-taggit",
+    "URL": "https://github.com/jazzband/django-taggit",
+    "Version": "6.1.0"
+  },
+  {
+    "License": "BSD-3-Clause",
+    "Name": "django-tasks",
+    "URL": "https://github.com/RealOrangeOne/django-tasks",
+    "Version": "0.8.1"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "django-treebeard",
+    "URL": "https://github.com/django-treebeard/django-treebeard/",
+    "Version": "4.7.1"
+  },
+  {
+    "License": "BSD License",
+    "Name": "djangorestframework",
+    "URL": "https://www.django-rest-framework.org/",
+    "Version": "3.16.1"
+  },
+  {
+    "License": "ISC License (ISCL)",
+    "Name": "dnspython",
+    "URL": "https://www.dnspython.org",
+    "Version": "2.8.0"
+  },
+  {
+    "License": "Apache-2.0",
+    "Name": "docker",
+    "URL": "https://github.com/docker/docker-py",
+    "Version": "7.1.0"
+  },
+  {
+    "License": "MIT License",
+    "Name": "docopt",
+    "URL": "http://docopt.org",
+    "Version": "0.6.2"
+  },
+  {
+    "License": "MIT License",
+    "Name": "docstring_parser",
+    "URL": "https://github.com/rr-/docstring_parser",
+    "Version": "0.18.0"
+  },
+  {
+    "License": "BSD License; GNU General Public License (GPL); Public Domain; Python Software Foundation License",
+    "Name": "docutils",
+    "URL": "https://docutils.sourceforge.io/",
+    "Version": "0.20.1"
+  },
+  {
+    "License": "MIT License",
+    "Name": "draftjs_exporter",
+    "URL": "https://github.com/springload/draftjs_exporter",
+    "Version": "5.1.0"
+  },
+  {
+    "License": "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0",
+    "Name": "ebaysdk",
+    "URL": "https://github.com/timotheus/ebaysdk-python",
+    "Version": "2.1.5"
+  },
+  {
+    "License": "MIT",
+    "Name": "ecdsa",
+    "URL": "http://github.com/tlsfuzzer/python-ecdsa",
+    "Version": "0.19.2"
+  },
+  {
+    "License": "The Unlicense (Unlicense)",
+    "Name": "email-validator",
+    "URL": "https://github.com/JoshData/python-email-validator",
+    "Version": "2.3.0"
+  },
+  {
+    "License": "MIT License",
+    "Name": "et_xmlfile",
+    "URL": "https://foss.heptapod.net/openpyxl/et_xmlfile",
+    "Version": "2.0.0"
+  },
+  {
+    "License": "BSD License",
+    "Name": "extruct",
+    "URL": "https://github.com/scrapinghub/extruct",
+    "Version": "0.18.0"
+  },
+  {
+    "License": "MIT License",
+    "Name": "factory_boy",
+    "URL": "https://github.com/FactoryBoy/factory_boy",
+    "Version": "3.3.3"
+  },
+  {
+    "License": "MIT",
+    "Name": "fastapi",
+    "URL": "https://github.com/fastapi/fastapi",
+    "Version": "0.135.2"
+  },
+  {
+    "License": "MIT",
+    "Name": "filelock",
+    "URL": "https://github.com/tox-dev/py-filelock",
+    "Version": "3.25.2"
+  },
+  {
+    "License": "MIT License",
+    "Name": "filetype",
+    "URL": "https://github.com/h2non/filetype.py",
+    "Version": "1.2.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "fonttools",
+    "URL": "http://github.com/fonttools/fonttools",
+    "Version": "4.62.1"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "freezegun",
+    "URL": "https://github.com/spulec/freezegun",
+    "Version": "1.5.1"
+  },
+  {
+    "License": "BSD-3-Clause",
+    "Name": "fsspec",
+    "URL": "https://github.com/fsspec/filesystem_spec",
+    "Version": "2026.2.0"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "geoip2",
+    "URL": "http://www.maxmind.com/",
+    "Version": "2.9.0"
+  },
+  {
+    "License": "MIT License",
+    "Name": "gevent",
+    "URL": "http://www.gevent.org/",
+    "Version": "24.11.1"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "google-ai-generativelanguage",
+    "URL": "https://github.com/googleapis/google-cloud-python/tree/main/packages/google-ai-generativelanguage",
+    "Version": "0.6.15"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "google-api-core",
+    "URL": "https://github.com/googleapis/google-cloud-python/tree/main/packages/google-api-core",
+    "Version": "2.30.3"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "google-api-python-client",
+    "URL": "https://github.com/googleapis/google-api-python-client/",
+    "Version": "2.194.0"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "google-auth",
+    "URL": "https://github.com/googleapis/google-auth-library-python",
+    "Version": "2.49.2"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "google-auth-httplib2",
+    "URL": "https://github.com/googleapis/google-cloud-python/packages/google-auth-httplib2",
+    "Version": "0.3.1"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "google-generativeai",
+    "URL": "https://github.com/google/generative-ai-python",
+    "Version": "0.8.6"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "googleapis-common-protos",
+    "URL": "https://github.com/googleapis/google-cloud-python/tree/main/packages/googleapis-common-protos",
+    "Version": "1.74.0"
+  },
+  {
+    "License": "MIT License",
+    "Name": "graphql-core",
+    "URL": "https://github.com/graphql-python/graphql-core",
+    "Version": "3.2.8"
+  },
+  {
+    "License": "MIT License",
+    "Name": "greenlet",
+    "URL": "https://greenlet.readthedocs.io/",
+    "Version": "3.1.1"
+  },
+  {
+    "License": "Apache-2.0",
+    "Name": "grpcio",
+    "URL": "https://grpc.io",
+    "Version": "1.80.0"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "grpcio-status",
+    "URL": "https://grpc.io",
+    "Version": "1.71.2"
+  },
+  {
+    "License": "MIT",
+    "Name": "gunicorn",
+    "URL": "https://gunicorn.org",
+    "Version": "25.3.0"
+  },
+  {
+    "License": "MIT License",
+    "Name": "h11",
+    "URL": "https://github.com/python-hyper/h11",
+    "Version": "0.16.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "harfile",
+    "URL": "https://github.com/schemathesis/harfile/blob/main/CHANGELOG.md",
+    "Version": "0.4.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "html-text",
+    "URL": "https://github.com/zytedata/html-text",
+    "Version": "0.7.1"
+  },
+  {
+    "License": "MIT License",
+    "Name": "html5lib",
+    "URL": "https://github.com/html5lib/html5lib-python",
+    "Version": "1.1"
+  },
+  {
+    "License": "BSD-3-Clause",
+    "Name": "httpcore",
+    "URL": "https://www.encode.io/httpcore/",
+    "Version": "1.0.9"
+  },
+  {
+    "License": "MIT License",
+    "Name": "httplib2",
+    "URL": "https://github.com/httplib2/httplib2",
+    "Version": "0.31.2"
+  },
+  {
+    "License": "MIT",
+    "Name": "httptools",
+    "URL": "https://github.com/MagicStack/httptools",
+    "Version": "0.7.1"
+  },
+  {
+    "License": "BSD License",
+    "Name": "httpx",
+    "URL": "https://github.com/encode/httpx",
+    "Version": "0.28.1"
+  },
+  {
+    "License": "MPL-2.0",
+    "Name": "hypothesis",
+    "URL": "https://hypothesis.works",
+    "Version": "6.152.4"
+  },
+  {
+    "License": "MIT",
+    "Name": "hypothesis-graphql",
+    "URL": "https://github.com/Stranger6667/hypothesis-graphql/blob/master/CHANGELOG.md",
+    "Version": "0.12.0"
+  },
+  {
+    "License": "Mozilla Public License 2.0 (MPL 2.0)",
+    "Name": "hypothesis-jsonschema",
+    "URL": "https://github.com/Zac-HD/hypothesis-jsonschema",
+    "Version": "0.23.1"
+  },
+  {
+    "License": "MIT",
+    "Name": "identify",
+    "URL": "https://github.com/pre-commit/identify",
+    "Version": "2.6.18"
+  },
+  {
+    "License": "BSD License",
+    "Name": "idna",
+    "URL": "https://github.com/kjd/idna",
+    "Version": "3.6"
+  },
+  {
+    "License": "MIT",
+    "Name": "iniconfig",
+    "URL": "https://github.com/pytest-dev/iniconfig",
+    "Version": "2.3.0"
+  },
+  {
+    "License": "UNKNOWN",
+    "Name": "interior-design-crm",
+    "URL": "UNKNOWN",
+    "Version": "0.1.0"
+  },
+  {
+    "License": "BSD License",
+    "Name": "isodate",
+    "URL": "https://github.com/gweis/isodate/",
+    "Version": "0.7.2"
+  },
+  {
+    "License": "BSD License",
+    "Name": "itsdangerous",
+    "URL": "https://github.com/pallets/itsdangerous/",
+    "Version": "2.2.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "jiter",
+    "URL": "https://github.com/pydantic/jiter/",
+    "Version": "0.14.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "jsonschema",
+    "URL": "https://github.com/python-jsonschema/jsonschema",
+    "Version": "4.26.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "jsonschema-specifications",
+    "URL": "https://github.com/python-jsonschema/jsonschema-specifications",
+    "Version": "2025.9.1"
+  },
+  {
+    "License": "MIT License",
+    "Name": "jsonschema_rs",
+    "URL": "https://github.com/Stranger6667/jsonschema/tree/master/crates/jsonschema-py",
+    "Version": "0.46.2"
+  },
+  {
+    "License": "MIT License",
+    "Name": "jstyleson",
+    "URL": "https://github.com/linjackson78/jstyleson",
+    "Version": "0.0.2"
+  },
+  {
+    "License": "Freely Distributable; MIT License",
+    "Name": "junit-xml",
+    "URL": "https://github.com/kyrus/python-junit-xml",
+    "Version": "1.9"
+  },
+  {
+    "License": "BSD License",
+    "Name": "kiwisolver",
+    "URL": "https://github.com/nucleic/kiwi",
+    "Version": "1.5.0"
+  },
+  {
+    "License": "BSD-3-Clause",
+    "Name": "kombu",
+    "URL": "https://kombu.readthedocs.io",
+    "Version": "5.6.2"
+  },
+  {
+    "License": "BSD License",
+    "Name": "laces",
+    "URL": "https://github.com/tbrlpld/laces",
+    "Version": "0.1.2"
+  },
+  {
+    "License": "MIT License",
+    "Name": "lagom",
+    "URL": "https://lagom-di.readthedocs.io/",
+    "Version": "2.7.7"
+  },
+  {
+    "License": "MIT License",
+    "Name": "librt",
+    "URL": "https://github.com/mypyc/librt",
+    "Version": "0.8.1"
+  },
+  {
+    "License": "MIT License",
+    "Name": "libsass",
+    "URL": "https://sass.github.io/libsass-python/",
+    "Version": "0.22.0"
+  },
+  {
+    "License": "Apache-2.0",
+    "Name": "license-expression",
+    "URL": "https://github.com/aboutcode-org/license-expression",
+    "Version": "30.4.4"
+  },
+  {
+    "License": "MIT",
+    "Name": "limits",
+    "URL": "https://limits.readthedocs.org",
+    "Version": "5.8.0"
+  },
+  {
+    "License": "BSD-2-Clause AND Apache-2.0 WITH LLVM-exception",
+    "Name": "llvmlite",
+    "URL": "http://llvmlite.readthedocs.io",
+    "Version": "0.46.0"
+  },
+  {
+    "License": "BSD License",
+    "Name": "lxml",
+    "URL": "https://lxml.de/",
+    "Version": "5.2.1"
+  },
+  {
+    "License": "BSD-3-Clause",
+    "Name": "lxml_html_clean",
+    "URL": "https://github.com/fedora-python/lxml_html_clean/",
+    "Version": "0.4.3"
+  },
+  {
+    "License": "MIT License",
+    "Name": "markdown-it-py",
+    "URL": "https://github.com/executablebooks/markdown-it-py",
+    "Version": "4.0.0"
+  },
+  {
+    "License": "Python Software Foundation License",
+    "Name": "matplotlib",
+    "URL": "https://matplotlib.org",
+    "Version": "3.10.9"
+  },
+  {
+    "License": "Apache-2.0",
+    "Name": "maxminddb",
+    "URL": "https://www.maxmind.com/",
+    "Version": "2.8.2"
+  },
+  {
+    "License": "MIT License",
+    "Name": "mdurl",
+    "URL": "https://github.com/executablebooks/mdurl",
+    "Version": "0.1.2"
+  },
+  {
+    "License": "MIT License",
+    "Name": "mf2py",
+    "URL": "UNKNOWN",
+    "Version": "2.0.1"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "minio",
+    "URL": "https://github.com/minio/minio-py",
+    "Version": "7.2.20"
+  },
+  {
+    "License": "MIT",
+    "Name": "more-itertools",
+    "URL": "https://github.com/more-itertools/more-itertools",
+    "Version": "10.8.0"
+  },
+  {
+    "License": "BSD License",
+    "Name": "mpmath",
+    "URL": "http://mpmath.org/",
+    "Version": "1.3.0"
+  },
+  {
+    "License": "Apache-2.0",
+    "Name": "msgpack",
+    "URL": "https://msgpack.org/",
+    "Version": "1.1.2"
+  },
+  {
+    "License": "MIT License",
+    "Name": "mypy",
+    "URL": "https://www.mypy-lang.org/",
+    "Version": "1.19.1"
+  },
+  {
+    "License": "MIT",
+    "Name": "mypy_extensions",
+    "URL": "https://github.com/python/mypy_extensions",
+    "Version": "1.1.0"
+  },
+  {
+    "License": "BSD-3-Clause",
+    "Name": "networkx",
+    "URL": "https://networkx.org/",
+    "Version": "3.6.1"
+  },
+  {
+    "License": "MIT",
+    "Name": "nexus-rpc",
+    "URL": "UNKNOWN",
+    "Version": "1.4.0"
+  },
+  {
+    "License": "BSD License",
+    "Name": "nodeenv",
+    "URL": "https://github.com/ekalinin/nodeenv",
+    "Version": "1.10.0"
+  },
+  {
+    "License": "GNU Library or Lesser General Public License (LGPL)",
+    "Name": "num2words",
+    "URL": "https://github.com/savoirfairelinux/num2words",
+    "Version": "0.5.13"
+  },
+  {
+    "License": "BSD License",
+    "Name": "numba",
+    "URL": "https://numba.pydata.org",
+    "Version": "0.64.0"
+  },
+  {
+    "License": "BSD License",
+    "Name": "numpy",
+    "URL": "https://numpy.org",
+    "Version": "2.3.3"
+  },
+  {
+    "License": "MIT License",
+    "Name": "ofxparse",
+    "URL": "http://sites.google.com/site/ofxparse",
+    "Version": "0.21"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "openai",
+    "URL": "https://github.com/openai/openai-python",
+    "Version": "2.32.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "openai-whisper",
+    "URL": "https://github.com/openai/whisper",
+    "Version": "20250625"
+  },
+  {
+    "License": "MIT License",
+    "Name": "openpyxl",
+    "URL": "https://openpyxl.readthedocs.io",
+    "Version": "3.1.5"
+  },
+  {
+    "License": "GNU Affero General Public License v3",
+    "Name": "openupgradelib",
+    "URL": "https://github.com/OCA/openupgradelib",
+    "Version": "3.11.2.dev8+g8a8601457"
+  },
+  {
+    "License": "MPL-2.0 AND (Apache-2.0 OR MIT)",
+    "Name": "orjson",
+    "URL": "https://github.com/ijl/orjson",
+    "Version": "3.11.8"
+  },
+  {
+    "License": "MIT License",
+    "Name": "packageurl-python",
+    "URL": "https://github.com/package-url/packageurl-python",
+    "Version": "0.17.6"
+  },
+  {
+    "License": "Apache-2.0 OR BSD-2-Clause",
+    "Name": "packaging",
+    "URL": "https://github.com/pypa/packaging",
+    "Version": "26.0"
+  },
+  {
+    "License": "BSD License",
+    "Name": "pandas",
+    "URL": "https://pandas.pydata.org",
+    "Version": "2.3.3"
+  },
+  {
+    "License": "BSD",
+    "Name": "passlib",
+    "URL": "https://passlib.readthedocs.io",
+    "Version": "1.7.4"
+  },
+  {
+    "License": "Mozilla Public License 2.0 (MPL 2.0)",
+    "Name": "pathspec",
+    "URL": "https://python-path-specification.readthedocs.io/en/latest/index.html",
+    "Version": "1.0.4"
+  },
+  {
+    "License": "CMU License (MIT-CMU)",
+    "Name": "pillow",
+    "URL": "https://python-pillow.github.io",
+    "Version": "11.1.0"
+  },
+  {
+    "License": "GNU General Public License v2 (GPLv2)",
+    "Name": "pillow_heif",
+    "URL": "https://github.com/bigcat88/pillow_heif",
+    "Version": "1.1.0"
+  },
+  {
+    "License": "MIT License",
+    "Name": "pip",
+    "URL": "https://pip.pypa.io/",
+    "Version": "24.3.1"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "pip-api",
+    "URL": "http://github.com/di/pip-api",
+    "Version": "0.0.34"
+  },
+  {
+    "License": "MIT",
+    "Name": "pip-licenses",
+    "URL": "https://github.com/raimon49/pip-licenses",
+    "Version": "5.5.5"
+  },
+  {
+    "License": "MIT",
+    "Name": "pip-requirements-parser",
+    "URL": "https://github.com/nexB/pip-requirements-parser",
+    "Version": "32.0.1"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "pip_audit",
+    "URL": "https://pypi.org/project/pip-audit/",
+    "Version": "2.10.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "platformdirs",
+    "URL": "https://github.com/tox-dev/platformdirs",
+    "Version": "4.4.0"
+  },
+  {
+    "License": "Apache-2.0",
+    "Name": "playwright",
+    "URL": "https://github.com/Microsoft/playwright-python",
+    "Version": "1.58.0"
+  },
+  {
+    "License": "MIT License",
+    "Name": "pluggy",
+    "URL": "UNKNOWN",
+    "Version": "1.6.0"
+  },
+  {
+    "License": "MIT License",
+    "Name": "polib",
+    "URL": "https://github.com/izimobil/polib/",
+    "Version": "1.1.1"
+  },
+  {
+    "License": "MIT",
+    "Name": "pre_commit",
+    "URL": "https://github.com/pre-commit/pre-commit",
+    "Version": "4.5.1"
+  },
+  {
+    "License": "BSD-3-Clause",
+    "Name": "prettytable",
+    "URL": "https://github.com/prettytable/prettytable",
+    "Version": "3.17.0"
+  },
+  {
+    "License": "BSD License",
+    "Name": "prompt_toolkit",
+    "URL": "https://github.com/prompt-toolkit/python-prompt-toolkit",
+    "Version": "3.0.52"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "proto-plus",
+    "URL": "https://github.com/googleapis/google-cloud-python/tree/main/packages/proto-plus",
+    "Version": "1.27.2"
+  },
+  {
+    "License": "3-Clause BSD License",
+    "Name": "protobuf",
+    "URL": "https://developers.google.com/protocol-buffers/",
+    "Version": "5.29.6"
+  },
+  {
+    "License": "BSD License",
+    "Name": "psutil",
+    "URL": "https://github.com/giampaolo/psutil",
+    "Version": "5.9.8"
+  },
+  {
+    "License": "GNU Library or Lesser General Public License (LGPL)",
+    "Name": "psycopg2",
+    "URL": "https://psycopg.org/",
+    "Version": "2.9.10"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "py-serializable",
+    "URL": "https://github.com/madpah/serializable#readme",
+    "Version": "2.1.0"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "pyOpenSSL",
+    "URL": "https://pyopenssl.org/",
+    "Version": "24.1.0"
+  },
+  {
+    "License": "BSD License",
+    "Name": "pyasn1",
+    "URL": "https://github.com/pyasn1/pyasn1",
+    "Version": "0.6.1"
+  },
+  {
+    "License": "BSD License",
+    "Name": "pyasn1_modules",
+    "URL": "https://github.com/pyasn1/pyasn1-modules",
+    "Version": "0.4.2"
+  },
+  {
+    "License": "BSD License",
+    "Name": "pycparser",
+    "URL": "https://github.com/eliben/pycparser",
+    "Version": "2.23"
+  },
+  {
+    "License": "BSD License; Public Domain",
+    "Name": "pycryptodome",
+    "URL": "https://www.pycryptodome.org",
+    "Version": "3.23.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "pydantic",
+    "URL": "https://github.com/pydantic/pydantic",
+    "Version": "2.12.5"
+  },
+  {
+    "License": "MIT",
+    "Name": "pydantic-settings",
+    "URL": "https://github.com/pydantic/pydantic-settings",
+    "Version": "2.13.1"
+  },
+  {
+    "License": "MIT",
+    "Name": "pydantic_core",
+    "URL": "https://github.com/pydantic/pydantic-core",
+    "Version": "2.41.5"
+  },
+  {
+    "License": "MIT License",
+    "Name": "pydicom",
+    "URL": "https://github.com/pydicom/pydicom",
+    "Version": "3.0.1"
+  },
+  {
+    "License": "MIT License",
+    "Name": "pydot",
+    "URL": "https://github.com/pydot/pydot",
+    "Version": "1.4.2"
+  },
+  {
+    "License": "BSD License",
+    "Name": "pydyf",
+    "URL": "https://www.courtbouillon.org/pydyf",
+    "Version": "0.12.1"
+  },
+  {
+    "License": "MIT License",
+    "Name": "pyee",
+    "URL": "https://github.com/jfhbrook/pyee",
+    "Version": "13.0.1"
+  },
+  {
+    "License": "UNKNOWN",
+    "Name": "pyerp",
+    "URL": "UNKNOWN",
+    "Version": "0.1.0"
+  },
+  {
+    "License": "MIT License",
+    "Name": "pyotp",
+    "URL": "https://github.com/pyotp/pyotp",
+    "Version": "2.9.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "pyparsing",
+    "URL": "https://github.com/pyparsing/pyparsing/",
+    "Version": "3.2.5"
+  },
+  {
+    "License": "GNU General Public License v2 or later (GPLv2+); GNU Lesser General Public License v2 or later (LGPLv2+); Mozilla Public License 1.1 (MPL 1.1)",
+    "Name": "pyphen",
+    "URL": "https://www.courtbouillon.org/pyphen",
+    "Version": "0.17.2"
+  },
+  {
+    "License": "MIT License",
+    "Name": "pypng",
+    "URL": "https://gitlab.com/drj11/pypng",
+    "Version": "0.20220715.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "pyrate-limiter",
+    "URL": "https://github.com/vutran1710/PyrateLimiter",
+    "Version": "4.1.0"
+  },
+  {
+    "License": "W3C License",
+    "Name": "pyrdfa3",
+    "URL": "https://prrvchr.github.io/pyrdfa3/",
+    "Version": "3.6.5"
+  },
+  {
+    "License": "BSD License",
+    "Name": "pyserial",
+    "URL": "https://github.com/pyserial/pyserial",
+    "Version": "3.5"
+  },
+  {
+    "License": "MIT",
+    "Name": "pytest",
+    "URL": "https://docs.pytest.org/en/latest/",
+    "Version": "9.0.2"
+  },
+  {
+    "License": "Apache-2.0",
+    "Name": "pytest-asyncio",
+    "URL": "https://github.com/pytest-dev/pytest-asyncio",
+    "Version": "1.3.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "pytest-cov",
+    "URL": "https://pytest-cov.readthedocs.io/en/latest/changelog.html",
+    "Version": "7.1.0"
+  },
+  {
+    "License": "Apache Software License; BSD License",
+    "Name": "python-dateutil",
+    "URL": "https://github.com/dateutil/dateutil",
+    "Version": "2.8.2"
+  },
+  {
+    "License": "MIT License",
+    "Name": "python-discovery",
+    "URL": "https://github.com/tox-dev/python-discovery",
+    "Version": "1.1.3"
+  },
+  {
+    "License": "BSD-3-Clause",
+    "Name": "python-dotenv",
+    "URL": "https://github.com/theskumar/python-dotenv",
+    "Version": "1.2.2"
+  },
+  {
+    "License": "MIT License",
+    "Name": "python-jose",
+    "URL": "http://github.com/mpdavis/python-jose",
+    "Version": "3.5.0"
+  },
+  {
+    "License": "BSD-2-Clause",
+    "Name": "python-json-logger",
+    "URL": "https://nhairs.github.io/python-json-logger",
+    "Version": "4.1.0"
+  },
+  {
+    "License": "Python Software Foundation License",
+    "Name": "python-ldap",
+    "URL": "https://www.python-ldap.org/",
+    "Version": "3.4.4"
+  },
+  {
+    "License": "Apache-2.0",
+    "Name": "python-multipart",
+    "URL": "https://github.com/Kludex/python-multipart",
+    "Version": "0.0.22"
+  },
+  {
+    "License": "GNU Lesser General Public License v2 or later (LGPLv2+)",
+    "Name": "python-stdnum",
+    "URL": "https://arthurdejong.org/python-stdnum/",
+    "Version": "1.19"
+  },
+  {
+    "License": "MIT License",
+    "Name": "pytz",
+    "URL": "http://pythonhosted.org/pytz",
+    "Version": "2025.2"
+  },
+  {
+    "License": "BSD License",
+    "Name": "pyusb",
+    "URL": "https://pyusb.github.io/pyusb",
+    "Version": "1.2.1"
+  },
+  {
+    "License": "BSD License",
+    "Name": "qrcode",
+    "URL": "https://github.com/lincolnloop/python-qrcode",
+    "Version": "7.4.2"
+  },
+  {
+    "License": "BSD License",
+    "Name": "rdflib",
+    "URL": "https://github.com/RDFLib/rdflib",
+    "Version": "7.6.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "redis",
+    "URL": "https://github.com/redis/redis-py",
+    "Version": "6.4.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "referencing",
+    "URL": "https://github.com/python-jsonschema/referencing",
+    "Version": "0.37.0"
+  },
+  {
+    "License": "Apache-2.0 AND CNRI-Python",
+    "Name": "regex",
+    "URL": "https://github.com/mrabarnett/mrab-regex",
+    "Version": "2026.2.28"
+  },
+  {
+    "License": "BSD License",
+    "Name": "reportlab",
+    "URL": "https://www.reportlab.com/",
+    "Version": "4.1.0"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "requests",
+    "URL": "https://github.com/psf/requests",
+    "Version": "2.33.1"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "requests-file",
+    "URL": "https://github.com/dashea/requests-file",
+    "Version": "2.1.0"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "requests-toolbelt",
+    "URL": "https://toolbelt.readthedocs.io/",
+    "Version": "1.0.0"
+  },
+  {
+    "License": "MIT License",
+    "Name": "rich",
+    "URL": "https://github.com/Textualize/rich",
+    "Version": "15.0.0"
+  },
+  {
+    "License": "Apache License, Version 2.0",
+    "Name": "rjsmin",
+    "URL": "http://opensource.perlig.de/rjsmin/",
+    "Version": "1.2.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "rpds-py",
+    "URL": "https://github.com/crate-py/rpds",
+    "Version": "0.30.0"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "rsa",
+    "URL": "https://stuvel.eu/rsa",
+    "Version": "4.9.1"
+  },
+  {
+    "License": "MIT License",
+    "Name": "ruff",
+    "URL": "https://docs.astral.sh/ruff",
+    "Version": "0.15.6"
+  },
+  {
+    "License": "MIT",
+    "Name": "schemathesis",
+    "URL": "https://github.com/schemathesis/schemathesis/blob/master/CHANGELOG.md",
+    "Version": "4.16.1"
+  },
+  {
+    "License": "MIT",
+    "Name": "setuptools",
+    "URL": "https://github.com/pypa/setuptools",
+    "Version": "80.9.0"
+  },
+  {
+    "License": "MIT License",
+    "Name": "six",
+    "URL": "https://github.com/benjaminp/six",
+    "Version": "1.17.0"
+  },
+  {
+    "License": "MIT License",
+    "Name": "slowapi",
+    "URL": "https://github.com/laurents/slowapi",
+    "Version": "0.1.9"
+  },
+  {
+    "License": "Apache Software License; MIT License",
+    "Name": "sniffio",
+    "URL": "https://github.com/python-trio/sniffio",
+    "Version": "1.3.1"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "sortedcontainers",
+    "URL": "http://www.grantjenks.com/docs/sortedcontainers/",
+    "Version": "2.4.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "soupsieve",
+    "URL": "https://github.com/facelessuser/soupsieve",
+    "Version": "2.8"
+  },
+  {
+    "License": "BSD License",
+    "Name": "sqlparse",
+    "URL": "https://github.com/andialbrecht/sqlparse",
+    "Version": "0.5.3"
+  },
+  {
+    "License": "BSD-3-Clause",
+    "Name": "starlette",
+    "URL": "https://github.com/Kludex/starlette",
+    "Version": "1.0.0"
+  },
+  {
+    "License": "BSD-3-Clause",
+    "Name": "starlette-testclient",
+    "URL": "https://github.com/Kludex/starlette-testclient",
+    "Version": "0.4.1"
+  },
+  {
+    "License": "MIT OR Apache-2.0",
+    "Name": "structlog",
+    "URL": "https://github.com/hynek/structlog/blob/main/CHANGELOG.md",
+    "Version": "25.5.0"
+  },
+  {
+    "License": "BSD License",
+    "Name": "sympy",
+    "URL": "https://sympy.org",
+    "Version": "1.14.0"
+  },
+  {
+    "License": "BSD License",
+    "Name": "telepath",
+    "URL": "https://github.com/wagtail/telepath",
+    "Version": "0.3.1"
+  },
+  {
+    "License": "MIT",
+    "Name": "temporalio",
+    "URL": "https://github.com/temporalio/sdk-python",
+    "Version": "1.25.0"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "tenacity",
+    "URL": "https://github.com/jd/tenacity",
+    "Version": "9.1.4"
+  },
+  {
+    "License": "Apache-2.0",
+    "Name": "testcontainers",
+    "URL": "https://github.com/testcontainers/testcontainers-python",
+    "Version": "4.14.2"
+  },
+  {
+    "License": "MIT License\n\nCopyright (c) 2022 OpenAI, Shantanu Jain\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+    "Name": "tiktoken",
+    "URL": "https://github.com/openai/tiktoken",
+    "Version": "0.12.0"
+  },
+  {
+    "License": "BSD License",
+    "Name": "tinycss2",
+    "URL": "https://www.courtbouillon.org/tinycss2",
+    "Version": "1.5.1"
+  },
+  {
+    "License": "MIT License",
+    "Name": "tinyhtml5",
+    "URL": "https://github.com/CourtBouillon/tinyhtml5",
+    "Version": "2.1.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "tomli",
+    "URL": "https://github.com/hukkin/tomli",
+    "Version": "2.4.1"
+  },
+  {
+    "License": "MIT License",
+    "Name": "tomli_w",
+    "URL": "https://github.com/hukkin/tomli-w",
+    "Version": "1.2.0"
+  },
+  {
+    "License": "BSD-3-Clause",
+    "Name": "torch",
+    "URL": "https://pytorch.org",
+    "Version": "2.10.0"
+  },
+  {
+    "License": "MPL-2.0 AND MIT",
+    "Name": "tqdm",
+    "URL": "https://tqdm.github.io",
+    "Version": "4.67.3"
+  },
+  {
+    "License": "Apache-2.0",
+    "Name": "types-passlib",
+    "URL": "https://github.com/python/typeshed",
+    "Version": "1.7.7.20260211"
+  },
+  {
+    "License": "Apache-2.0",
+    "Name": "types-protobuf",
+    "URL": "https://github.com/python/typeshed",
+    "Version": "6.32.1.20260221"
+  },
+  {
+    "License": "MIT",
+    "Name": "typing-inspection",
+    "URL": "https://github.com/pydantic/typing-inspection",
+    "Version": "0.4.2"
+  },
+  {
+    "License": "PSF-2.0",
+    "Name": "typing_extensions",
+    "URL": "https://github.com/python/typing_extensions",
+    "Version": "4.15.0"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "tzdata",
+    "URL": "https://github.com/python/tzdata",
+    "Version": "2025.2"
+  },
+  {
+    "License": "MIT License",
+    "Name": "tzlocal",
+    "URL": "https://github.com/regebro/tzlocal/blob/master/CHANGES.txt",
+    "Version": "5.3.1"
+  },
+  {
+    "License": "BSD 3-Clause OR Apache-2.0",
+    "Name": "uritemplate",
+    "URL": "https://uritemplate.readthedocs.org",
+    "Version": "4.2.0"
+  },
+  {
+    "License": "MIT License",
+    "Name": "urllib3",
+    "URL": "https://github.com/urllib3/urllib3/blob/main/CHANGES.rst",
+    "Version": "2.0.7"
+  },
+  {
+    "License": "BSD-3-Clause",
+    "Name": "uvicorn",
+    "URL": "https://uvicorn.dev/",
+    "Version": "0.42.0"
+  },
+  {
+    "License": "Apache Software License; MIT License",
+    "Name": "uvloop",
+    "URL": "UNKNOWN",
+    "Version": "0.22.1"
+  },
+  {
+    "License": "BSD License",
+    "Name": "vine",
+    "URL": "https://github.com/celery/vine",
+    "Version": "5.1.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "virtualenv",
+    "URL": "https://github.com/pypa/virtualenv",
+    "Version": "21.2.0"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "vobject",
+    "URL": "http://eventable.github.io/vobject/",
+    "Version": "0.9.6.1"
+  },
+  {
+    "License": "BSD-3-Clause",
+    "Name": "w3lib",
+    "URL": "https://github.com/scrapy/w3lib",
+    "Version": "2.4.1"
+  },
+  {
+    "License": "BSD-3-Clause",
+    "Name": "wagtail",
+    "URL": "https://wagtail.org/",
+    "Version": "7.1.1"
+  },
+  {
+    "License": "MIT License",
+    "Name": "watchfiles",
+    "URL": "https://github.com/samuelcolvin/watchfiles",
+    "Version": "1.1.1"
+  },
+  {
+    "License": "MIT",
+    "Name": "wcwidth",
+    "URL": "https://github.com/jquast/wcwidth",
+    "Version": "0.6.0"
+  },
+  {
+    "License": "BSD License",
+    "Name": "weasyprint",
+    "URL": "https://weasyprint.org/",
+    "Version": "68.1"
+  },
+  {
+    "License": "BSD License",
+    "Name": "webencodings",
+    "URL": "https://github.com/SimonSapin/python-webencodings",
+    "Version": "0.5.1"
+  },
+  {
+    "License": "BSD-3-Clause",
+    "Name": "websockets",
+    "URL": "https://github.com/python-websockets/websockets",
+    "Version": "16.0"
+  },
+  {
+    "License": "BSD-2-Clause",
+    "Name": "wrapt",
+    "URL": "https://github.com/GrahamDumpleton/wrapt",
+    "Version": "2.1.2"
+  },
+  {
+    "License": "BSD License",
+    "Name": "xlrd",
+    "URL": "http://www.python-excel.org/",
+    "Version": "2.0.1"
+  },
+  {
+    "License": "BSD License",
+    "Name": "xlwt",
+    "URL": "http://www.python-excel.org/",
+    "Version": "1.3.0"
+  },
+  {
+    "License": "MIT License",
+    "Name": "youtube-transcript-api",
+    "URL": "https://github.com/jdepoix/youtube-transcript-api",
+    "Version": "1.2.4"
+  },
+  {
+    "License": "Unlicense",
+    "Name": "yt-dlp",
+    "URL": "https://github.com/yt-dlp/yt-dlp",
+    "Version": "2026.3.17"
+  },
+  {
+    "License": "MIT License",
+    "Name": "zeep",
+    "URL": "https://github.com/mvantellingen/python-zeep",
+    "Version": "4.3.1"
+  },
+  {
+    "License": "Zope Public License",
+    "Name": "zope.event",
+    "URL": "https://github.com/zopefoundation/zope.event",
+    "Version": "6.0"
+  },
+  {
+    "License": "Zope Public License",
+    "Name": "zope.interface",
+    "URL": "https://github.com/zopefoundation/zope.interface",
+    "Version": "8.0.1"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "zopfli",
+    "URL": "https://github.com/fonttools/py-zopfli",
+    "Version": "0.4.1"
+  }
+]

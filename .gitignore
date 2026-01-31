@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+.uv/
+
+# Environment
+.env
+*.env.local
+
+# Alembic
+migrations/versions/*.py
+!migrations/versions/.gitkeep
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker volumes
+postgres_data/
+data/attachments/
+backend/data/
+
+# Logs
+*.log
+admin-ui/.next/
+admin-ui/next-env.d.ts
+admin-ui/package-lock.json
+admin-ui/tsconfig.tsbuildinfo
+portal-ui/.next/
+portal-ui/next-env.d.ts
+portal-ui/package-lock.json
+portal-ui/tsconfig.tsbuildinfo
+backend/.venv/
+memory/
+.claude/
+.cursor/
+
+# Coverage
+coverage.xml
+.coverage
+.coverage.host
+htmlcov/
+
+# Test artifacts
+admin-ui/test-results/
+admin-ui/playwright-report/
+
+# Celery Beat (never commit; dev beat uses /tmp in compose)
+backend/celerybeat-schedule
+backend/celerybeat-schedule-*

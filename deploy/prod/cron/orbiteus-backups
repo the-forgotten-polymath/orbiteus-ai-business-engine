@@ -1,0 +1,19 @@
+# /etc/cron.d/orbiteus-backups — DoD §13.4 / §13.5
+#
+# Install:
+#   sudo cp deploy/prod/cron/orbiteus-backups /etc/cron.d/
+#   sudo chmod 0644 /etc/cron.d/orbiteus-backups
+#
+# Make sure the env file the cron entries source carries the same
+# DATABASE_URL / BACKUP_S3_* values your `docker compose` stack uses.
+#
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+MAILTO=ops@orbiteus.local
+
+# Daily full backup at 02:00 UTC (RPO ≤ 24h plus hourly WAL is the
+# pgbackrest follow-up — both documented in docs/31-backups-and-dr.md).
+0 2 * * * orbiteus . /etc/orbiteus/backup.env && /opt/orbiteus/scripts/backup_db.sh >> /var/log/orbiteus/backup.log 2>&1
+
+# Weekly verification restore drill — Sundays 04:00 UTC.
+0 4 * * 0 orbiteus . /etc/orbiteus/backup.env && /opt/orbiteus/scripts/restore_drill.sh >> /var/log/orbiteus/restore_drill.log 2>&1

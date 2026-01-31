@@ -1,0 +1,41 @@
+FROM node:20-alpine AS builder
+
+WORKDIR /app
+
+# Build context is monorepo root (npm workspaces: admin-ui + portal-ui).
+COPY package.json package-lock.json ./
+COPY admin-ui/package.json ./admin-ui/
+COPY portal-ui/package.json ./portal-ui/
+COPY packages/i18n/package.json ./packages/i18n/
+
+RUN npm install --include=dev
+
+COPY packages/i18n ./packages/i18n
+COPY admin-ui ./admin-ui
+
+ARG BACKEND_URL=http://backend:8000
+ARG NEXT_PUBLIC_DEMO_LOGIN_EMAIL=
+ARG NEXT_PUBLIC_DEMO_LOGIN_PASSWORD=
+ENV BACKEND_URL=${BACKEND_URL}
+ENV NEXT_PUBLIC_DEMO_LOGIN_EMAIL=${NEXT_PUBLIC_DEMO_LOGIN_EMAIL}
+ENV NEXT_PUBLIC_DEMO_LOGIN_PASSWORD=${NEXT_PUBLIC_DEMO_LOGIN_PASSWORD}
+ENV NEXT_TELEMETRY_DISABLED=1
+
+WORKDIR /app/admin-ui
+RUN npm run build
+
+FROM node:20-alpine AS runner
+
+WORKDIR /app
+ENV NODE_ENV=production
+ENV NEXT_TELEMETRY_DISABLED=1
+
+COPY --from=builder /app/admin-ui/.next ./.next
+# npm workspaces hoist dependencies to the monorepo root.
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/admin-ui/package.json ./
+COPY --from=builder /app/admin-ui/public ./public
+COPY --from=builder /app/admin-ui/next.config.js ./
+
+EXPOSE 3000
+CMD ["npm", "run", "start", "--", "-H", "0.0.0.0", "-p", "3000"]

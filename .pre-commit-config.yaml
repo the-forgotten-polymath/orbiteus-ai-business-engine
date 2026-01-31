@@ -1,0 +1,40 @@
+# Pre-commit hooks (docs/18-security.md).
+#
+# Install:
+#   pip install pre-commit detect-secrets
+#   pre-commit install
+#
+# Run on every staged change. CI runs the same hooks via
+# `.github/workflows/secrets.yml`.
+
+repos:
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.5.0
+    hooks:
+      - id: detect-secrets
+        args:
+          - "--baseline"
+          - ".secrets.baseline"
+        exclude: |
+          (?x)^(
+            \.git/.*|
+            node_modules/.*|
+            \.next/.*|
+            .*\.svg|
+            .*\.png|
+            .*\.lock|
+            package-lock\.json|
+            backend/.venv/.*|
+            backend/migrations/versions/.*\.py
+          )$
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-merge-conflict
+      - id: check-yaml
+        exclude: ^(docker-compose|deploy/.*)\.ya?ml$
+      - id: check-added-large-files
+        args: ["--maxkb=1024"]

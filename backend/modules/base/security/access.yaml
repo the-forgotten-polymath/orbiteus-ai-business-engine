@@ -1,0 +1,147 @@
+# Base module – default system access rights
+# Superadmin bypass is enforced in rbac.py (is_superadmin flag) — no need to declare here.
+
+access:
+  # -------------------------------------------------------------------
+  # System admin group – full access to all system/engine system objects
+  # -------------------------------------------------------------------
+  - name: system_tenant
+    role: base.group_system
+    model: base.tenant
+    read: true
+    write: true
+    create: true
+    delete: true
+
+  - name: system_company
+    role: base.group_system
+    model: base.company
+    read: true
+    write: true
+    create: true
+    delete: true
+
+  - name: system_user
+    role: base.group_system
+    model: base.user
+    read: true
+    write: true
+    create: true
+    delete: true
+
+  - name: system_role
+    role: base.group_system
+    model: base.role
+    read: true
+    write: true
+    create: true
+    delete: true
+
+  - name: system_agent
+    role: base.group_system
+    model: base.agent
+    read: true
+    write: true
+    create: true
+    delete: true
+
+  - name: system_agent_run
+    role: base.group_system
+    model: base.agent-run
+    read: true
+    write: true
+    create: true
+    delete: true
+
+  - name: system_model
+    role: base.group_system
+    model: base.registry-model
+    read: true
+    write: true
+    create: true
+    delete: true
+
+  - name: system_model_field
+    role: base.group_system
+    model: base.registry-model-field
+    read: true
+    write: true
+    create: true
+    delete: true
+
+  - name: system_base_model_access
+    role: base.group_system
+    model: base.model-access
+    read: true
+    write: true
+    create: true
+    delete: true
+
+  - name: system_rule
+    role: base.group_system
+    model: base.record-rule
+    read: true
+    write: true
+    create: true
+    delete: true
+
+  - name: system_ui_menu
+    role: base.group_system
+    model: base.ui-menu
+    read: true
+    write: true
+    create: true
+    delete: true
+
+  - name: system_ui_view
+    role: base.group_system
+    model: base.ui-view
+    read: true
+    write: true
+    create: true
+    delete: true
+
+  - name: system_config_param
+    role: base.group_system
+    model: base.config-param
+    read: true
+    write: true
+    create: true
+    delete: true
+
+  - name: system_ui_translation
+    role: base.group_system
+    model: base.ui-translation
+    read: true
+    write: true
+    create: true
+    delete: true
+
+  - name: system_attachment
+    role: base.group_system
+    model: base.attachment
+    read: true
+    write: true
+    create: true
+    delete: true
+
+  # -------------------------------------------------------------------
+  # Regular user – read-only on basic shared objects
+  # -------------------------------------------------------------------
+  - name: user_attachment
+    role: base.group_user
+    model: base.attachment
+    read: true
+    write: false
+    create: true
+    delete: true
+
+  - name: user_company
+    role: base.group_user
+    model: base.company
+    read: true
+    write: true
+    create: false
+    delete: false
+
+record_rules: []

@@ -1,0 +1,198 @@
+# Production single-host compose (docs/17-deployment.md).
+#
+# Usage:
+#   cp deploy/prod/env.example .env.prod
+#   # edit .env.prod — set POSTGRES_PASSWORD, SECRET_KEY, AI_SECRET_KEY,
+#   #                 BOOTSTRAP_ADMIN_*, ALLOWED_ORIGINS
+#   docker compose --env-file .env.prod -f docker-compose.prod.yml up -d --build
+#
+# Services:
+#   postgres   — Postgres 16 + pgvector (adr/0005)
+#   pgbouncer  — connection pooling (adr/0012)
+#   redis      — cache, broker, pubsub, jti revocation (adr/0003, 0014)
+#   migrate    — one-shot Alembic upgrade head; backend depends on its success
+#   backend    — Gunicorn + UvicornWorker (adr/0011), N workers per replica
+#   worker     — Celery worker (added in PR 5; placeholder no-op until then)
+#   beat       — Celery Beat scheduler (added in PR 5)
+#   frontend   — Next.js admin UI (production build)
+#   nginx      — TLS termination, static cache, SSE buffering off
+
+x-backend-env: &backend_env
+  DATABASE_URL: postgresql+asyncpg://orbiteus:${POSTGRES_PASSWORD}@pgbouncer:6432/orbiteus
+  REDIS_URL: redis://redis:6379/0
+  SECRET_KEY: ${SECRET_KEY}
+  AI_SECRET_KEY: ${AI_SECRET_KEY}
+  ENVIRONMENT: production
+  DEBUG: "false"
+  ALLOW_PUBLIC_REGISTRATION: ${ALLOW_PUBLIC_REGISTRATION:-true}
+  CORS_ORIGINS: ${CORS_ORIGINS:-["https://app.example.com"]}
+  BOOTSTRAP_ADMIN_EMAIL: ${BOOTSTRAP_ADMIN_EMAIL}
+  BOOTSTRAP_ADMIN_PASSWORD: ${BOOTSTRAP_ADMIN_PASSWORD}
+  # Attachment filestore (local). Mount orbiteus_attachments on backend (below).
+  ATTACHMENT_STORAGE: ${ATTACHMENT_STORAGE:-local}
+  ATTACHMENT_STORAGE_PATH: ${ATTACHMENT_STORAGE_PATH:-/var/orbiteus/attachments}
+  # ATTACHMENT_MAX_BYTES: ${ATTACHMENT_MAX_BYTES:-52428800}
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: orbiteus
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: orbiteus
+    volumes:
+      - orbiteus_pg:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U orbiteus -d orbiteus"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    restart: unless-stopped
+
+  pgbouncer:
+    image: edoburu/pgbouncer:1.22.1
+    environment:
+      DB_HOST: postgres
+      DB_USER: orbiteus
+      DB_PASSWORD: ${POSTGRES_PASSWORD}
+      DB_NAME: orbiteus
+      POOL_MODE: transaction
+      MAX_CLIENT_CONN: "1000"
+      DEFAULT_POOL_SIZE: "50"
+      AUTH_TYPE: scram-sha-256
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "sh", "-c", "echo 'show pools' | psql -h 127.0.0.1 -p 6432 -U orbiteus pgbouncer >/dev/null 2>&1 || exit 0"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    command: ["redis-server", "--appendonly", "yes", "--save", "60", "1000"]
+    volumes:
+      - orbiteus_redis:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    restart: unless-stopped
+
+  migrate:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.prod
+    entrypoint: ["./entrypoint-migrate.sh"]
+    environment: *backend_env
+    depends_on:
+      postgres:
+        condition: service_healthy
+      pgbouncer:
+        condition: service_started
+    restart: "no"
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.prod
+    environment:
+      <<: *backend_env
+      USE_GUNICORN: "1"
+      GUNICORN_WORKERS: ${GUNICORN_WORKERS:-4}
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      pgbouncer:
+        condition: service_started
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O- http://127.0.0.1:8000/api/health/live | grep -q ok"]
+      interval: 10s
+      timeout: 3s
+      retries: 6
+      start_period: 30s
+    volumes:
+      - orbiteus_attachments:/var/orbiteus/attachments
+    restart: unless-stopped
+
+  worker:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.prod
+    environment:
+      <<: *backend_env
+      USE_GUNICORN: "0"
+    entrypoint: ["sh", "-c", "celery -A celery_app worker -l info -Q default,outbox"]
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      redis:
+        condition: service_healthy
+      pgbouncer:
+        condition: service_started
+    restart: unless-stopped
+
+  beat:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.prod
+    environment:
+      <<: *backend_env
+      USE_GUNICORN: "0"
+    entrypoint: ["sh", "-c", "celery -A celery_app beat -l info"]
+    depends_on:
+      worker:
+        condition: service_started
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: admin-ui/Dockerfile.prod
+      args:
+        BACKEND_URL: http://backend:8000
+    environment:
+      BACKEND_URL: http://backend:8000
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  portal:
+    build:
+      context: .
+      dockerfile: portal-ui/Dockerfile.prod
+      args:
+        BACKEND_URL: http://backend:8000
+    environment:
+      BACKEND_URL: http://backend:8000
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  nginx:
+    image: nginx:1.27-alpine
+    ports:
+      - "${NGINX_HTTP_PORT:-80}:80"
+      - "${NGINX_HTTPS_PORT:-443}:443"
+    volumes:
+      - ./deploy/prod/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./deploy/prod/letsencrypt:/etc/letsencrypt:ro
+    depends_on:
+      backend:
+        condition: service_healthy
+      frontend:
+        condition: service_started
+    restart: unless-stopped
+    profiles: ["nginx"]
+
+volumes:
+  orbiteus_pg:
+  orbiteus_redis:
+  orbiteus_attachments:

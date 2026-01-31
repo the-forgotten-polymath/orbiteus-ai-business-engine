@@ -1,0 +1,29 @@
+FROM python:3.13-slim
+
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PIP_NO_CACHE_DIR=1
+
+WORKDIR /app
+
+# uv for fast deterministic installs.
+RUN pip install --no-cache-dir uv
+
+COPY . .
+
+RUN chmod +x entrypoint.sh entrypoint-migrate.sh \
+    && uv pip install --system .
+
+EXPOSE 8000
+
+# Production HTTP server: Gunicorn process manager + UvicornWorker (ADR-0011).
+# Tune workers/timeout via env vars in docker-compose.prod.yml.
+ENV GUNICORN_WORKERS=4 \
+    GUNICORN_TIMEOUT=60 \
+    GUNICORN_GRACEFUL_TIMEOUT=30 \
+    GUNICORN_KEEP_ALIVE=30 \
+    GUNICORN_MAX_REQUESTS=10000 \
+    GUNICORN_MAX_REQUESTS_JITTER=1000 \
+    GUNICORN_BIND=0.0.0.0:8000
+
+ENTRYPOINT ["./entrypoint.sh"]

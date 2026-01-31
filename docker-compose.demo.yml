@@ -1,0 +1,74 @@
+# Demo stack for demo.orbiteus.com — Postgres + API + Next (production build).
+# Usage (from repo root):
+#   cp deploy/demo/env.example .env.demo
+#   # edit .env.demo — set POSTGRES_PASSWORD, SECRET_KEY, BOOTSTRAP_*
+#   docker compose --env-file .env.demo -f docker-compose.demo.yml up -d --build
+
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: orbiteus
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: orbiteus
+    volumes:
+      - orbiteus_demo_pg:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U orbiteus -d orbiteus"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    command: ["redis-server", "--appendonly", "yes"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.prod
+    environment:
+      DATABASE_URL: postgresql+asyncpg://orbiteus:${POSTGRES_PASSWORD}@db:5432/orbiteus
+      REDIS_URL: redis://redis:6379/0
+      SECRET_KEY: ${SECRET_KEY}
+      ENVIRONMENT: production
+      DEBUG: "false"
+      ALLOW_PUBLIC_REGISTRATION: ${ALLOW_PUBLIC_REGISTRATION:-true}
+      # JSON list for pydantic-settings (same-origin /api via Next rewrites rarely needs browser CORS).
+      CORS_ORIGINS: '["https://demo.orbiteus.com"]'
+      BOOTSTRAP_ADMIN_EMAIL: ${BOOTSTRAP_ADMIN_EMAIL}
+      BOOTSTRAP_ADMIN_PASSWORD: ${BOOTSTRAP_ADMIN_PASSWORD}
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+
+  frontend:
+    build:
+      # Monorepo root — admin-ui/Dockerfile.prod copies package-lock + admin-ui + portal-ui workspaces.
+      context: .
+      dockerfile: admin-ui/Dockerfile.prod
+      args:
+        BACKEND_URL: http://backend:8000
+        # Shown on /login sign-in step (baked at build). Keep in sync with bootstrap admin.
+        NEXT_PUBLIC_DEMO_LOGIN_EMAIL: ${BOOTSTRAP_ADMIN_EMAIL}
+        NEXT_PUBLIC_DEMO_LOGIN_PASSWORD: ${BOOTSTRAP_ADMIN_PASSWORD}
+    environment:
+      BACKEND_URL: http://backend:8000
+    ports:
+      - "127.0.0.1:${DEMO_HOST_PORT:-13100}:3000"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  orbiteus_demo_pg:
